@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Title -->
-  <title>Alternative Dashboard | Front - Admin &amp; Dashboard Template</title>
+  <title>Alternative Dashboard | Front - Admin &amp; Dashboard Panel</title>
 
   <!-- Favicon -->
   <link rel="shortcut icon" href="favicon.ico">
@@ -19,7 +19,7 @@
   <!-- CSS Implementing Plugins -->
   <link rel="stylesheet" href="assets/css/vendor.min.css">
 
-  <!-- CSS Front Template -->
+  <!-- CSS Front Panel -->
   <link rel="stylesheet" href="assets/css/theme.minc619.css?v=1.0">
 
   <link rel="preload" href="assets/css/theme.min.css" data-hs-appearance="default" as="style">
@@ -155,8 +155,8 @@
       <div class="navbar-nav-wrap-content-start">
         <!-- Navbar Vertical Toggle -->
         <button type="button" class="js-navbar-vertical-aside-toggle-invoker navbar-aside-toggler">
-          <i class="bi-arrow-bar-left navbar-toggler-short-align" data-bs-template='<div class="tooltip d-none d-md-block" role="tooltip"><div class="arrow"></div><div class="tooltip-inner"></div></div>' data-bs-toggle="tooltip" data-bs-placement="right" title="Collapse"></i>
-          <i class="bi-arrow-bar-right navbar-toggler-full-align" data-bs-template='<div class="tooltip d-none d-md-block" role="tooltip"><div class="arrow"></div><div class="tooltip-inner"></div></div>' data-bs-toggle="tooltip" data-bs-placement="right" title="Expand"></i>
+          <i class="bi-arrow-bar-left navbar-toggler-short-align" data-bs-Panel='<div class="tooltip d-none d-md-block" role="tooltip"><div class="arrow"></div><div class="tooltip-inner"></div></div>' data-bs-toggle="tooltip" data-bs-placement="right" title="Collapse"></i>
+          <i class="bi-arrow-bar-right navbar-toggler-full-align" data-bs-Panel='<div class="tooltip d-none d-md-block" role="tooltip"><div class="arrow"></div><div class="tooltip-inner"></div></div>' data-bs-toggle="tooltip" data-bs-placement="right" title="Expand"></i>
         </button>
 
         <!-- End Navbar Vertical Toggle -->
@@ -956,8 +956,8 @@
 
         <!-- Navbar Vertical Toggle -->
         <button type="button" class="js-navbar-vertical-aside-toggle-invoker navbar-aside-toggler">
-          <i class="bi-arrow-bar-left navbar-toggler-short-align" data-bs-template='<div class="tooltip d-none d-md-block" role="tooltip"><div class="arrow"></div><div class="tooltip-inner"></div></div>' data-bs-toggle="tooltip" data-bs-placement="right" title="Collapse"></i>
-          <i class="bi-arrow-bar-right navbar-toggler-full-align" data-bs-template='<div class="tooltip d-none d-md-block" role="tooltip"><div class="arrow"></div><div class="tooltip-inner"></div></div>' data-bs-toggle="tooltip" data-bs-placement="right" title="Expand"></i>
+          <i class="bi-arrow-bar-left navbar-toggler-short-align" data-bs-Panel='<div class="tooltip d-none d-md-block" role="tooltip"><div class="arrow"></div><div class="tooltip-inner"></div></div>' data-bs-toggle="tooltip" data-bs-placement="right" title="Collapse"></i>
+          <i class="bi-arrow-bar-right navbar-toggler-full-align" data-bs-Panel='<div class="tooltip d-none d-md-block" role="tooltip"><div class="arrow"></div><div class="tooltip-inner"></div></div>' data-bs-toggle="tooltip" data-bs-placement="right" title="Expand"></i>
         </button>
 
         <!-- End Navbar Vertical Toggle -->
@@ -2542,8 +2542,8 @@
                   </div>
                   <!-- End Media -->
 
-                  <h5 class="mb-1">Great template</h5>
-                  <p>Another great template from Htmlstream! Refreshing and Thought provoking design and it changes my view about how I design the websites. Great typography, modern clean white design, nice tones of the color. SVG artifacts are a plus.</p>
+                  <h5 class="mb-1">Great Panel</h5>
+                  <p>Another great Panel from Htmlstream! Refreshing and Thought provoking design and it changes my view about how I design the websites. Great typography, modern clean white design, nice tones of the color. SVG artifacts are a plus.</p>
 
                   <a href="#">
                     <i class="bi-reply"></i> Reply
@@ -2613,7 +2613,7 @@
                   <!-- End Media -->
 
                   <h5 class="mb-1">Well documented! Lots of possibilities!</h5>
-                  <p>Truly great. Well done. Carefully structured. Happy with the template.</p>
+                  <p>Truly great. Well done. Carefully structured. Happy with the Panel.</p>
 
                   <blockquote class="blockquote blockquote-sm mt-4">
                     <!-- Media -->
@@ -2701,8 +2701,8 @@
                   </div>
                   <!-- End Media -->
 
-                  <h5 class="mb-1">Beautifull template great support</h5>
-                  <p>Got a very quick response on my inquiry, very nice! Love the template, beautifull components!</p>
+                  <h5 class="mb-1">Beautifull Panel great support</h5>
+                  <p>Got a very quick response on my inquiry, very nice! Love the Panel, beautifull components!</p>
 
                   <blockquote class="blockquote blockquote-sm mt-4">
                     <!-- Media -->
@@ -5903,7 +5903,7 @@
             "code": "BR"
           }
         ];
-        const tooltipTemplate = function (marker) {
+        const tooltipPanel = function (marker) {
           return `
 					<span class="d-flex align-items-center mb-2">
 						<img class="avatar avatar-xss avatar-circle" src="${marker.flag}" alt="Flag">
@@ -5929,14 +5929,14 @@
 
             if (marker) {
               tooltip._tooltip.style.display = null;
-              tooltip._tooltip.innerHTML = tooltipTemplate(marker);
+              tooltip._tooltip.innerHTML = tooltipPanel(marker);
             } else {
               tooltip._tooltip.style.display = 'none';
             }
           },
           onMarkerTooltipShow: function (map, tooltip, code) {
             tooltip._tooltip.style.display = null;
-            tooltip._tooltip.innerHTML = tooltipTemplate(markers[code]);
+            tooltip._tooltip.innerHTML = tooltipPanel(markers[code]);
           },
           backgroundColor: HSThemeAppearance.getAppearance() === 'dark' ? '#25282a' : '#132144'
         })

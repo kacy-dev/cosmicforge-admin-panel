@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Title -->
-  <title>Invoice Generator | Front - Admin &amp; Dashboard Template</title>
+  <title>Invoice Generator | Front - Admin &amp; Dashboard Panel</title>
 
   <!-- Favicon -->
   <link rel="shortcut icon" href="favicon.ico">
@@ -19,7 +19,7 @@
   <!-- CSS Implementing Plugins -->
   <link rel="stylesheet" href="assets/css/vendor.min.css">
 
-  <!-- CSS Front Template -->
+  <!-- CSS Front Panel -->
   <link rel="stylesheet" href="assets/css/theme.minc619.css?v=1.0">
 
   <link rel="preload" href="assets/css/theme.min.css" data-hs-appearance="default" as="style">
@@ -155,8 +155,8 @@
       <div class="navbar-nav-wrap-content-start">
         <!-- Navbar Vertical Toggle -->
         <button type="button" class="js-navbar-vertical-aside-toggle-invoker navbar-aside-toggler">
-          <i class="bi-arrow-bar-left navbar-toggler-short-align" data-bs-template='<div class="tooltip d-none d-md-block" role="tooltip"><div class="arrow"></div><div class="tooltip-inner"></div></div>' data-bs-toggle="tooltip" data-bs-placement="right" title="Collapse"></i>
-          <i class="bi-arrow-bar-right navbar-toggler-full-align" data-bs-template='<div class="tooltip d-none d-md-block" role="tooltip"><div class="arrow"></div><div class="tooltip-inner"></div></div>' data-bs-toggle="tooltip" data-bs-placement="right" title="Expand"></i>
+          <i class="bi-arrow-bar-left navbar-toggler-short-align" data-bs-Panel='<div class="tooltip d-none d-md-block" role="tooltip"><div class="arrow"></div><div class="tooltip-inner"></div></div>' data-bs-toggle="tooltip" data-bs-placement="right" title="Collapse"></i>
+          <i class="bi-arrow-bar-right navbar-toggler-full-align" data-bs-Panel='<div class="tooltip d-none d-md-block" role="tooltip"><div class="arrow"></div><div class="tooltip-inner"></div></div>' data-bs-toggle="tooltip" data-bs-placement="right" title="Expand"></i>
         </button>
 
         <!-- End Navbar Vertical Toggle -->
@@ -956,8 +956,8 @@
 
         <!-- Navbar Vertical Toggle -->
         <button type="button" class="js-navbar-vertical-aside-toggle-invoker navbar-aside-toggler">
-          <i class="bi-arrow-bar-left navbar-toggler-short-align" data-bs-template='<div class="tooltip d-none d-md-block" role="tooltip"><div class="arrow"></div><div class="tooltip-inner"></div></div>' data-bs-toggle="tooltip" data-bs-placement="right" title="Collapse"></i>
-          <i class="bi-arrow-bar-right navbar-toggler-full-align" data-bs-template='<div class="tooltip d-none d-md-block" role="tooltip"><div class="arrow"></div><div class="tooltip-inner"></div></div>' data-bs-toggle="tooltip" data-bs-placement="right" title="Expand"></i>
+          <i class="bi-arrow-bar-left navbar-toggler-short-align" data-bs-Panel='<div class="tooltip d-none d-md-block" role="tooltip"><div class="arrow"></div><div class="tooltip-inner"></div></div>' data-bs-toggle="tooltip" data-bs-placement="right" title="Collapse"></i>
+          <i class="bi-arrow-bar-right navbar-toggler-full-align" data-bs-Panel='<div class="tooltip d-none d-md-block" role="tooltip"><div class="arrow"></div><div class="tooltip-inner"></div></div>' data-bs-toggle="tooltip" data-bs-placement="right" title="Expand"></i>
         </button>
 
         <!-- End Navbar Vertical Toggle -->
@@ -1499,7 +1499,7 @@
               <!-- End Row -->
 
               <div class="js-add-field" data-hs-add-field-options='{
-                      "template": "#addInvoiceItemTemplate",
+                      "Panel": "#addInvoiceItemPanel",
                       "container": "#addInvoiceItemContainer",
                       "defaultCreated": 0
                     }'>
@@ -1591,7 +1591,7 @@
                 </a>
 
                 <!-- Add Phone Input Field -->
-                <div id="addInvoiceItemTemplate" style="display: none;">
+                <div id="addInvoiceItemPanel" style="display: none;">
                   <!-- Content -->
                   <div class="input-group-add-field">
                     <div class="row">
@@ -1770,9 +1770,9 @@
                             "hideSearch": true
                           }'>
                     <option label="empty"></option>
-                    <option value="currency1" selected data-option-template='<span class="d-flex align-items-center text-truncate"><img class="avatar avatar-xss avatar-circle me-2" src="assets/vendor/flag-icon-css/flags/1x1/us.svg" alt="Image description" width="16"/><span>USD (United States Dollar)</span></span>'>USD (United States Dollar)</option>
-                    <option value="currency2" data-option-template='<span class="d-flex align-items-center text-truncate"><img class="avatar avatar-xss avatar-circle me-2" src="assets/vendor/flag-icon-css/flags/1x1/gb.svg" alt="Image description" width="16"/><span>GBP (United Kingdom Pound)</span></span>'>GBP (United Kingdom Pound)</option>
-                    <option value="currency3" data-option-template='<span class="d-flex align-items-center text-truncate"><img class="avatar avatar-xss avatar-circle me-2" src="assets/vendor/flag-icon-css/flags/1x1/eu.svg" alt="Image description" width="16"/><span>Euro (Euro Member Countries)</span></span>'>Euro (Euro Member Countries)</option>
+                    <option value="currency1" selected data-option-Panel='<span class="d-flex align-items-center text-truncate"><img class="avatar avatar-xss avatar-circle me-2" src="assets/vendor/flag-icon-css/flags/1x1/us.svg" alt="Image description" width="16"/><span>USD (United States Dollar)</span></span>'>USD (United States Dollar)</option>
+                    <option value="currency2" data-option-Panel='<span class="d-flex align-items-center text-truncate"><img class="avatar avatar-xss avatar-circle me-2" src="assets/vendor/flag-icon-css/flags/1x1/gb.svg" alt="Image description" width="16"/><span>GBP (United Kingdom Pound)</span></span>'>GBP (United Kingdom Pound)</option>
+                    <option value="currency3" data-option-Panel='<span class="d-flex align-items-center text-truncate"><img class="avatar avatar-xss avatar-circle me-2" src="assets/vendor/flag-icon-css/flags/1x1/eu.svg" alt="Image description" width="16"/><span>Euro (Euro Member Countries)</span></span>'>Euro (Euro Member Countries)</option>
                   </select>
                 </div>
                 <!-- End Select -->
@@ -4821,7 +4821,7 @@
                           <option value="can edit" selected>Can edit</option>
                           <option value="can comment">Can comment</option>
                           <option value="full access">Full access</option>
-                          <option value="remove" data-option-template='<div class="text-danger">Remove</div>'>Remove</option>
+                          <option value="remove" data-option-Panel='<div class="text-danger">Remove</div>'>Remove</option>
                         </select>
                       </div>
                       <!-- End Select -->
@@ -4863,7 +4863,7 @@
                           <option value="can edit" selected>Can edit</option>
                           <option value="can comment">Can comment</option>
                           <option value="full access">Full access</option>
-                          <option value="remove" data-option-template='<div class="text-danger">Remove</div>'>Remove</option>
+                          <option value="remove" data-option-Panel='<div class="text-danger">Remove</div>'>Remove</option>
                         </select>
                       </div>
                       <!-- End Select -->
@@ -4905,7 +4905,7 @@
                           <option value="can edit" selected>Can edit</option>
                           <option value="can comment">Can comment</option>
                           <option value="full access">Full access</option>
-                          <option value="remove" data-option-template='<div class="text-danger">Remove</div>'>Remove</option>
+                          <option value="remove" data-option-Panel='<div class="text-danger">Remove</div>'>Remove</option>
                         </select>
                       </div>
                       <!-- End Select -->
@@ -4947,7 +4947,7 @@
                           <option value="can edit" selected>Can edit</option>
                           <option value="can comment">Can comment</option>
                           <option value="full access">Full access</option>
-                          <option value="remove" data-option-template='<div class="text-danger">Remove</div>'>Remove</option>
+                          <option value="remove" data-option-Panel='<div class="text-danger">Remove</div>'>Remove</option>
                         </select>
                       </div>
                       <!-- End Select -->
@@ -4980,7 +4980,7 @@
         <div class="modal-footer">
           <div class="row align-items-center flex-grow-1 mx-n2">
             <div class="col-sm-9 mb-2 mb-sm-0">
-              <input type="hidden" id="publicShareLinkClipboard" value="https://themes.getbootstrap.com/product/front-multipurpose-responsive-template/">
+              <input type="hidden" id="publicShareLinkClipboard" value="https://themes.getbootstrap.com/product/front-multipurpose-responsive-Panel/">
 
               <p class="modal-footer-text">The public share <a class="link" href="#">link settings</a>
                 <i class="bi-question-circle" data-bs-toggle="tooltip" data-bs-placement="top" title="The public share link allows people to view the project without giving access to full collaboration features."></i>

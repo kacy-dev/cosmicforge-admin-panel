@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Title -->
-  <title>Maps (JSVectorMap) - Documentation | Front - Multipurpose Responsive Template</title>
+  <title>Maps (JSVectorMap) - Documentation | Front - Multipurpose Responsive Panel</title>
 
   <!-- Favicon -->
   <link rel="shortcut icon" href="../favicon.ico">
@@ -19,7 +19,7 @@
   <!-- CSS Implementing Plugins -->
   <link rel="stylesheet" href="../assets/css/vendor.min.css">
 
-  <!-- CSS Front Template -->
+  <!-- CSS Front Panel -->
   <link rel="stylesheet" href="../assets/css/theme.minc619.css?v=1.0">
 
   <link rel="preload" href="../assets/css/theme.min.css" data-hs-appearance="default" as="style">
@@ -151,7 +151,7 @@
                 <form id="docsSearch" class="position-relative" data-hs-list-options='{
                        "searchMenu": true,
                        "keyboard": true,
-                       "item": "searchTemplate",
+                       "item": "searchPanel",
                        "valueNames": ["component", "category", {"name": "link", "attr": "href"}],
                        "empty": "#searchNoResults"
                      }'>
@@ -185,16 +185,16 @@
                 </form>
                 <!-- End Search Form -->
 
-                <!-- List Item Template -->
+                <!-- List Item Panel -->
                 <div class="d-none">
-                  <div id="searchTemplate" class="dropdown-item">
+                  <div id="searchPanel" class="dropdown-item">
                     <a class="d-block link" href="#">
                       <span class="category d-block fw-normal text-muted mb-1"></span>
                       <span class="component text-dark"></span>
                     </a>
                   </div>
                 </div>
-                <!-- End List Item Template -->
+                <!-- End List Item Panel -->
               </div>
 
               <!-- Navbar -->
@@ -1040,7 +1040,7 @@
                         "code": "BR"
                       }
                     ];
-                    const tooltipTemplate = function(marker) {
+                    const tooltipPanel = function(marker) {
                       return `
                         &lt;span class="d-flex align-items-center mb-2"&gt;
                           &lt;img class="avatar avatar-xss avatar-circle" src="${marker.flag}" alt="Flag"&gt;
@@ -1066,14 +1066,14 @@
 
                         if (marker) {
                           tooltip._tooltip.style.display = null;
-                          tooltip._tooltip.innerHTML = tooltipTemplate(marker);
+                          tooltip._tooltip.innerHTML = tooltipPanel(marker);
                         } else {
                           tooltip._tooltip.style.display = 'none';
                         }
                       },
                       onMarkerTooltipShow: function (map, tooltip, code) {
                         tooltip._tooltip.style.display = null;
-                        tooltip._tooltip.innerHTML = tooltipTemplate(markers[code]);
+                        tooltip._tooltip.innerHTML = tooltipPanel(markers[code]);
                       },
                       backgroundColor: HSThemeAppearance.getAppearance() === 'dark' ? '#25282a' : '#132144'
                     })
@@ -1237,7 +1237,7 @@
           "code": "BR"
         }
       ];
-      const tooltipTemplate = function(marker) {
+      const tooltipPanel = function(marker) {
         return `
           <span class="d-flex align-items-center mb-2">
             <img class="avatar avatar-xss avatar-circle" src="${marker.flag}" alt="Flag">
@@ -1263,14 +1263,14 @@
 
           if (marker) {
             tooltip._tooltip.style.display = null;
-            tooltip._tooltip.innerHTML = tooltipTemplate(marker);
+            tooltip._tooltip.innerHTML = tooltipPanel(marker);
           } else {
             tooltip._tooltip.style.display = 'none';
           }
         },
         onMarkerTooltipShow: function (map, tooltip, code) {
           tooltip._tooltip.style.display = null;
-          tooltip._tooltip.innerHTML = tooltipTemplate(markers[code]);
+          tooltip._tooltip.innerHTML = tooltipPanel(markers[code]);
         },
         backgroundColor: HSThemeAppearance.getAppearance() === 'dark' ? '#25282a' : '#132144'
       })

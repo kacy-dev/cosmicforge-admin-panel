@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Title -->
-  <title>Calendar (Fullcalendar) - Documentation | Front - Multipurpose Responsive Template</title>
+  <title>Calendar (Fullcalendar) - Documentation | Front - Multipurpose Responsive Panel</title>
 
   <!-- Favicon -->
   <link rel="shortcut icon" href="../favicon.ico">
@@ -19,7 +19,7 @@
   <!-- CSS Implementing Plugins -->
   <link rel="stylesheet" href="../assets/css/vendor.min.css">
 
-  <!-- CSS Front Template -->
+  <!-- CSS Front Panel -->
   <link rel="stylesheet" href="../assets/css/theme.minc619.css?v=1.0">
 
   <link rel="preload" href="../assets/css/theme.min.css" data-hs-appearance="default" as="style">
@@ -151,7 +151,7 @@
                 <form id="docsSearch" class="position-relative" data-hs-list-options='{
                        "searchMenu": true,
                        "keyboard": true,
-                       "item": "searchTemplate",
+                       "item": "searchPanel",
                        "valueNames": ["component", "category", {"name": "link", "attr": "href"}],
                        "empty": "#searchNoResults"
                      }'>
@@ -185,16 +185,16 @@
                 </form>
                 <!-- End Search Form -->
 
-                <!-- List Item Template -->
+                <!-- List Item Panel -->
                 <div class="d-none">
-                  <div id="searchTemplate" class="dropdown-item">
+                  <div id="searchPanel" class="dropdown-item">
                     <a class="d-block link" href="#">
                       <span class="category d-block fw-normal text-muted mb-1"></span>
                       <span class="component text-dark"></span>
                     </a>
                   </div>
                 </div>
-                <!-- End List Item Template -->
+                <!-- End List Item Panel -->
               </div>
 
               <!-- Navbar -->
@@ -1194,12 +1194,12 @@
 							                      "hideSearch": true,
 							                      "width": "10rem"
 							                    }'&gt;
-							                  &lt;option value="rgba(55,125,255,.1)" selected data-option-template='&lt;div&gt;&lt;span class="legend-indicator bg-primary"&gt;&lt;/span&gt;Primary&lt;/div&gt;'&gt;Primary &lt;/option&gt;
-							                  &lt;option value="rgba(0,201,167,.1)" data-option-template='&lt;div&gt;&lt;span class="legend-indicator bg-success"&gt;&lt;/span&gt;Green&lt;/div&gt;'&gt;Green &lt;/option&gt;
-							                  &lt;option value="rgba(237,76,120,.1)" data-option-template='&lt;div&gt;&lt;span class="legend-indicator bg-danger"&gt;&lt;/span&gt;Red&lt;/div&gt;'&gt;Red &lt;/option&gt;
-							                  &lt;option value="rgba(245,202,153,.1)" data-option-template='&lt;div&gt;&lt;span class="legend-indicator bg-warning"&gt;&lt;/span&gt;Yellow&lt;/div&gt;'&gt;Yellow &lt;/option&gt;
-							                  &lt;option value="rgba(0,201,219,1)" data-option-template='&lt;div&gt;&lt;span class="legend-indicator bg-info"&gt;&lt;/span&gt;Cyan&lt;/div&gt;'&gt;Cyan &lt;/option&gt;
-							                  &lt;option value="rgba(19,33,68,1)" data-option-template='&lt;div&gt;&lt;span class="legend-indicator bg-dark"&gt;&lt;/span&gt;Navy&lt;/div&gt;'&gt;Navy &lt;/option&gt;
+							                  &lt;option value="rgba(55,125,255,.1)" selected data-option-Panel='&lt;div&gt;&lt;span class="legend-indicator bg-primary"&gt;&lt;/span&gt;Primary&lt;/div&gt;'&gt;Primary &lt;/option&gt;
+							                  &lt;option value="rgba(0,201,167,.1)" data-option-Panel='&lt;div&gt;&lt;span class="legend-indicator bg-success"&gt;&lt;/span&gt;Green&lt;/div&gt;'&gt;Green &lt;/option&gt;
+							                  &lt;option value="rgba(237,76,120,.1)" data-option-Panel='&lt;div&gt;&lt;span class="legend-indicator bg-danger"&gt;&lt;/span&gt;Red&lt;/div&gt;'&gt;Red &lt;/option&gt;
+							                  &lt;option value="rgba(245,202,153,.1)" data-option-Panel='&lt;div&gt;&lt;span class="legend-indicator bg-warning"&gt;&lt;/span&gt;Yellow&lt;/div&gt;'&gt;Yellow &lt;/option&gt;
+							                  &lt;option value="rgba(0,201,219,1)" data-option-Panel='&lt;div&gt;&lt;span class="legend-indicator bg-info"&gt;&lt;/span&gt;Cyan&lt;/div&gt;'&gt;Cyan &lt;/option&gt;
+							                  &lt;option value="rgba(19,33,68,1)" data-option-Panel='&lt;div&gt;&lt;span class="legend-indicator bg-dark"&gt;&lt;/span&gt;Navy&lt;/div&gt;'&gt;Navy &lt;/option&gt;
 							                &lt;/select&gt;
 							              &lt;/div&gt;
 							            &lt;/div&gt;
@@ -1381,7 +1381,7 @@
 											$popover = new bootstrap.Popover(event.el, {
 												html: true,
 												content: _popoverContent,
-												template: `
+												Panel: `
 													&lt;div class=&quot;popover fullcalendar-event-popover&quot; role=&quot;tooltip&quot;&gt;
 														&lt;div class=&quot;arrow&quot;&gt;&lt;/div&gt;
 														&lt;h3 class=&quot;popover-header&quot;&gt;&lt;/h3&gt;
@@ -2383,12 +2383,12 @@
 										  "hideSearch": true,
 										  "width": "10rem"
 										}'>
-                  <option value="rgba(55,125,255,.1)" selected data-option-template='<div><span class="legend-indicator bg-primary"></span>Primary</div>'>Primary </option>
-                  <option value="rgba(0,201,167,.1)" data-option-template='<div><span class="legend-indicator bg-success"></span>Green</div>'>Green </option>
-                  <option value="rgba(237,76,120,.1)" data-option-template='<div><span class="legend-indicator bg-danger"></span>Red</div>'>Red </option>
-                  <option value="rgba(245,202,153,.1)" data-option-template='<div><span class="legend-indicator bg-warning"></span>Yellow</div>'>Yellow </option>
-                  <option value="rgba(0,201,219,1)" data-option-template='<div><span class="legend-indicator bg-info"></span>Cyan</div>'>Cyan </option>
-                  <option value="rgba(19,33,68,1)" data-option-template='<div><span class="legend-indicator bg-dark"></span>Navy</div>'>Navy </option>
+                  <option value="rgba(55,125,255,.1)" selected data-option-Panel='<div><span class="legend-indicator bg-primary"></span>Primary</div>'>Primary </option>
+                  <option value="rgba(0,201,167,.1)" data-option-Panel='<div><span class="legend-indicator bg-success"></span>Green</div>'>Green </option>
+                  <option value="rgba(237,76,120,.1)" data-option-Panel='<div><span class="legend-indicator bg-danger"></span>Red</div>'>Red </option>
+                  <option value="rgba(245,202,153,.1)" data-option-Panel='<div><span class="legend-indicator bg-warning"></span>Yellow</div>'>Yellow </option>
+                  <option value="rgba(0,201,219,1)" data-option-Panel='<div><span class="legend-indicator bg-info"></span>Cyan</div>'>Cyan </option>
+                  <option value="rgba(19,33,68,1)" data-option-Panel='<div><span class="legend-indicator bg-dark"></span>Navy</div>'>Navy </option>
                 </select>
               </div>
             </div>
@@ -2675,7 +2675,7 @@
             $popover = new bootstrap.Popover(event.el, {
               html: true,
               content: _popoverContent,
-              template: `
+              Panel: `
 
 								<div class="popover fullcalendar-event-popover" role="tooltip">
 									<div class="arrow"></div>

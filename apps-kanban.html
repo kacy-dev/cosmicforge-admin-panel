@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Title -->
-  <title>Kanban | Front - Admin &amp; Dashboard Template</title>
+  <title>Kanban | Front - Admin &amp; Dashboard Panel</title>
 
   <!-- Favicon -->
   <link rel="shortcut icon" href="favicon.ico">
@@ -19,7 +19,7 @@
   <!-- CSS Implementing Plugins -->
   <link rel="stylesheet" href="assets/css/vendor.min.css">
 
-  <!-- CSS Front Template -->
+  <!-- CSS Front Panel -->
   <link rel="stylesheet" href="assets/css/theme.minc619.css?v=1.0">
 
   <link rel="preload" href="assets/css/theme.min.css" data-hs-appearance="default" as="style">
@@ -155,8 +155,8 @@
       <div class="navbar-nav-wrap-content-start">
         <!-- Navbar Vertical Toggle -->
         <button type="button" class="js-navbar-vertical-aside-toggle-invoker navbar-aside-toggler">
-          <i class="bi-arrow-bar-left navbar-toggler-short-align" data-bs-template='<div class="tooltip d-none d-md-block" role="tooltip"><div class="arrow"></div><div class="tooltip-inner"></div></div>' data-bs-toggle="tooltip" data-bs-placement="right" title="Collapse"></i>
-          <i class="bi-arrow-bar-right navbar-toggler-full-align" data-bs-template='<div class="tooltip d-none d-md-block" role="tooltip"><div class="arrow"></div><div class="tooltip-inner"></div></div>' data-bs-toggle="tooltip" data-bs-placement="right" title="Expand"></i>
+          <i class="bi-arrow-bar-left navbar-toggler-short-align" data-bs-Panel='<div class="tooltip d-none d-md-block" role="tooltip"><div class="arrow"></div><div class="tooltip-inner"></div></div>' data-bs-toggle="tooltip" data-bs-placement="right" title="Collapse"></i>
+          <i class="bi-arrow-bar-right navbar-toggler-full-align" data-bs-Panel='<div class="tooltip d-none d-md-block" role="tooltip"><div class="arrow"></div><div class="tooltip-inner"></div></div>' data-bs-toggle="tooltip" data-bs-placement="right" title="Expand"></i>
         </button>
 
         <!-- End Navbar Vertical Toggle -->
@@ -956,8 +956,8 @@
 
         <!-- Navbar Vertical Toggle -->
         <button type="button" class="js-navbar-vertical-aside-toggle-invoker navbar-aside-toggler">
-          <i class="bi-arrow-bar-left navbar-toggler-short-align" data-bs-template='<div class="tooltip d-none d-md-block" role="tooltip"><div class="arrow"></div><div class="tooltip-inner"></div></div>' data-bs-toggle="tooltip" data-bs-placement="right" title="Collapse"></i>
-          <i class="bi-arrow-bar-right navbar-toggler-full-align" data-bs-template='<div class="tooltip d-none d-md-block" role="tooltip"><div class="arrow"></div><div class="tooltip-inner"></div></div>' data-bs-toggle="tooltip" data-bs-placement="right" title="Expand"></i>
+          <i class="bi-arrow-bar-left navbar-toggler-short-align" data-bs-Panel='<div class="tooltip d-none d-md-block" role="tooltip"><div class="arrow"></div><div class="tooltip-inner"></div></div>' data-bs-toggle="tooltip" data-bs-placement="right" title="Collapse"></i>
+          <i class="bi-arrow-bar-right navbar-toggler-full-align" data-bs-Panel='<div class="tooltip d-none d-md-block" role="tooltip"><div class="arrow"></div><div class="tooltip-inner"></div></div>' data-bs-toggle="tooltip" data-bs-placement="right" title="Expand"></i>
         </button>
 
         <!-- End Navbar Vertical Toggle -->
@@ -1517,7 +1517,7 @@
           <!-- Kanban Row -->
           <ul class="row list-unstyled kanban-board-row">
             <li class="js-add-field col-12" data-hs-add-field-options='{
-                "template": "#createProjectGridTemplateToDo",
+                "Panel": "#createProjectGridPanelToDo",
                 "container": "#createProjectGridContainerToDo",
                 "defaultCreated": 0
                }'>
@@ -1826,8 +1826,8 @@
               </div>
               <!-- End Card -->
 
-              <!-- Add Create Project Template -->
-              <form id="createProjectGridTemplateToDo" style="display: none;">
+              <!-- Add Create Project Panel -->
+              <form id="createProjectGridPanelToDo" style="display: none;">
                 <div class="js-sortable-link sortablejs-custom sortablejs-custom-rotate sortablejs-custom-handle" data-href="#">
                   <div class="card mb-3">
                     <div class="card-body">
@@ -1843,11 +1843,11 @@
                   </div>
                 </div>
               </form>
-              <!-- End Add Create Project Template -->
+              <!-- End Add Create Project Panel -->
             </li>
 
             <li class="js-add-field col-12" data-hs-add-field-options='{
-                  "template": "#createProjectGridTemplateInProgress",
+                  "Panel": "#createProjectGridPanelInProgress",
                   "container": "#createProjectGridContainerInProgress",
                   "defaultCreated": 0
                 }'>
@@ -2068,8 +2068,8 @@
               </div>
               <!-- End Card -->
 
-              <!-- Add Create Project Template -->
-              <form id="createProjectGridTemplateInProgress" style="display: none;">
+              <!-- Add Create Project Panel -->
+              <form id="createProjectGridPanelInProgress" style="display: none;">
                 <div class="js-sortable-link sortablejs-custom sortablejs-custom-rotate sortablejs-custom-handle" data-href="#">
                   <div class="card mb-3">
                     <div class="card-body">
@@ -2085,11 +2085,11 @@
                   </div>
                 </div>
               </form>
-              <!-- End Add Create Project Template -->
+              <!-- End Add Create Project Panel -->
             </li>
 
             <li class="js-add-field col-12" data-hs-add-field-options='{
-                  "template": "#createProjectGridTemplateReview",
+                  "Panel": "#createProjectGridPanelReview",
                   "container": "#createProjectGridContainerReview",
                   "defaultCreated": 0
                 }'>
@@ -2210,8 +2210,8 @@
               </div>
               <!-- End Card -->
 
-              <!-- Add Create Project Template -->
-              <form id="createProjectGridTemplateReview" style="display: none;">
+              <!-- Add Create Project Panel -->
+              <form id="createProjectGridPanelReview" style="display: none;">
                 <div class="js-sortable-link sortablejs-custom sortablejs-custom-rotate sortablejs-custom-handle" data-href="#">
                   <div class="card mb-3">
                     <div class="card-body">
@@ -2227,11 +2227,11 @@
                   </div>
                 </div>
               </form>
-              <!-- End Add Create Project Template -->
+              <!-- End Add Create Project Panel -->
             </li>
 
             <li class="js-add-field col-12" data-hs-add-field-options='{
-                 "template": "#createProjectGridTemplateDone",
+                 "Panel": "#createProjectGridPanelDone",
                  "container": "#createProjectGridContainerDone",
                  "defaultCreated": 0
                }'>
@@ -2640,8 +2640,8 @@
               </div>
               <!-- End Card -->
 
-              <!-- Add Create Project Template -->
-              <form id="createProjectGridTemplateDone" style="display: none;">
+              <!-- Add Create Project Panel -->
+              <form id="createProjectGridPanelDone" style="display: none;">
                 <div class="js-sortable-link sortablejs-custom sortablejs-custom-rotate sortablejs-custom-handle" data-href="#">
                   <div class="card mb-3">
                     <div class="card-body">
@@ -2657,7 +2657,7 @@
                   </div>
                 </div>
               </form>
-              <!-- End Add Create Project Template -->
+              <!-- End Add Create Project Panel -->
             </li>
 
             <li class="col-12">
@@ -2685,7 +2685,7 @@
           <!-- Kanban List -->
           <ul class="list-inline">
             <li class="js-add-field" data-hs-add-field-options='{
-                  "template": "#createProjectListTemplateToDo",
+                  "Panel": "#createProjectListPanelToDo",
                   "container": "#createProjectListContainerToDo",
                   "defaultCreated": 0
                 }'>
@@ -3010,8 +3010,8 @@
               </a>
               <!-- End Card -->
 
-              <!-- Add Create Project Template -->
-              <form id="createProjectListTemplateToDo" style="display: none;">
+              <!-- Add Create Project Panel -->
+              <form id="createProjectListPanelToDo" style="display: none;">
                 <div class="js-sortable-link sortablejs-custom-handle card mb-3" data-href="#">
                   <div class="card-body">
                     <div class="mb-4">
@@ -3025,7 +3025,7 @@
                   </div>
                 </div>
               </form>
-              <!-- End Add Create Project Template -->
+              <!-- End Add Create Project Panel -->
             </li>
 
             <!-- Divider -->
@@ -3035,7 +3035,7 @@
             <!-- End Divider -->
 
             <li class="js-add-field" data-hs-add-field-options='{
-                  "template": "#createProjectListTemplateInProgress",
+                  "Panel": "#createProjectListPanelInProgress",
                   "container": "#createProjectListContainerInProgress",
                   "defaultCreated": 0
                 }'>
@@ -3264,8 +3264,8 @@
               </a>
               <!-- End Card -->
 
-              <!-- Add Create Project Template -->
-              <form id="createProjectListTemplateInProgress" style="display: none;">
+              <!-- Add Create Project Panel -->
+              <form id="createProjectListPanelInProgress" style="display: none;">
                 <div class="js-sortable-link sortablejs-custom-handle card mb-3" data-href="#">
                   <div class="card-body">
                     <div class="mb-4">
@@ -3279,7 +3279,7 @@
                   </div>
                 </div>
               </form>
-              <!-- End Add Create Project Template -->
+              <!-- End Add Create Project Panel -->
             </li>
 
             <!-- Divider -->
@@ -3289,7 +3289,7 @@
             <!-- End Divider -->
 
             <li class="js-add-field" data-hs-add-field-options='{
-                  "template": "#createProjectListTemplateReview",
+                  "Panel": "#createProjectListPanelReview",
                   "container": "#createProjectListContainerReview",
                   "defaultCreated": 0
                 }'>
@@ -3413,8 +3413,8 @@
               </a>
               <!-- End Card -->
 
-              <!-- Add Create Project Template -->
-              <form id="createProjectListTemplateReview" style="display: none;">
+              <!-- Add Create Project Panel -->
+              <form id="createProjectListPanelReview" style="display: none;">
                 <div class="js-sortable-link sortablejs-custom-handle card mb-3" data-href="#">
                   <div class="card-body">
                     <div class="mb-4">
@@ -3428,7 +3428,7 @@
                   </div>
                 </div>
               </form>
-              <!-- End Add Create Project Template -->
+              <!-- End Add Create Project Panel -->
             </li>
 
             <!-- Divider -->
@@ -3438,7 +3438,7 @@
             <!-- End Divider -->
 
             <li class="js-add-field" data-hs-add-field-options='{
-                  "template": "#createProjectListTemplateDone",
+                  "Panel": "#createProjectListPanelDone",
                   "container": "#createProjectListContainerDone",
                   "defaultCreated": 0
                 }'>
@@ -3865,8 +3865,8 @@
               </a>
               <!-- End Card -->
 
-              <!-- Add Create Project Template -->
-              <form id="createProjectListTemplateDone" style="display: none;">
+              <!-- Add Create Project Panel -->
+              <form id="createProjectListPanelDone" style="display: none;">
                 <div class="js-sortable-link sortablejs-custom-handle card mb-3" data-href="#">
                   <div class="card-body">
                     <div class="mb-4">
@@ -3880,7 +3880,7 @@
                   </div>
                 </div>
               </form>
-              <!-- End Add Create Project Template -->
+              <!-- End Add Create Project Panel -->
             </li>
           </ul>
           <!-- End Kanban List -->
@@ -6896,7 +6896,7 @@
                           <option value="can edit" selected>Can edit</option>
                           <option value="can comment">Can comment</option>
                           <option value="full access">Full access</option>
-                          <option value="remove" data-option-template='<div class="text-danger">Remove</div>'>Remove</option>
+                          <option value="remove" data-option-Panel='<div class="text-danger">Remove</div>'>Remove</option>
                         </select>
                       </div>
                       <!-- End Select -->
@@ -6938,7 +6938,7 @@
                           <option value="can edit" selected>Can edit</option>
                           <option value="can comment">Can comment</option>
                           <option value="full access">Full access</option>
-                          <option value="remove" data-option-template='<div class="text-danger">Remove</div>'>Remove</option>
+                          <option value="remove" data-option-Panel='<div class="text-danger">Remove</div>'>Remove</option>
                         </select>
                       </div>
                       <!-- End Select -->
@@ -6980,7 +6980,7 @@
                           <option value="can edit" selected>Can edit</option>
                           <option value="can comment">Can comment</option>
                           <option value="full access">Full access</option>
-                          <option value="remove" data-option-template='<div class="text-danger">Remove</div>'>Remove</option>
+                          <option value="remove" data-option-Panel='<div class="text-danger">Remove</div>'>Remove</option>
                         </select>
                       </div>
                       <!-- End Select -->
@@ -7022,7 +7022,7 @@
                           <option value="can edit" selected>Can edit</option>
                           <option value="can comment">Can comment</option>
                           <option value="full access">Full access</option>
-                          <option value="remove" data-option-template='<div class="text-danger">Remove</div>'>Remove</option>
+                          <option value="remove" data-option-Panel='<div class="text-danger">Remove</div>'>Remove</option>
                         </select>
                       </div>
                       <!-- End Select -->
@@ -7055,7 +7055,7 @@
         <div class="modal-footer">
           <div class="row align-items-center flex-grow-1 mx-n2">
             <div class="col-sm-9 mb-2 mb-sm-0">
-              <input type="hidden" id="publicShareLinkClipboard" value="https://themes.getbootstrap.com/product/front-multipurpose-responsive-template/">
+              <input type="hidden" id="publicShareLinkClipboard" value="https://themes.getbootstrap.com/product/front-multipurpose-responsive-Panel/">
 
               <p class="modal-footer-text">The public share <a class="link" href="#">link settings</a>
                 <i class="bi-question-circle" data-bs-toggle="tooltip" data-bs-placement="top" title="The public share link allows people to view the project without giving access to full collaboration features."></i>
