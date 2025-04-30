@@ -7,7 +7,7 @@
 }
 
 p, ul li, ol li {
-  color: #1e2022;
+  color: #1e2025;
 }
 
 code {
@@ -379,7 +379,7 @@ div.code-toolbar > .prism-light + .toolbar span:focus {
 }
 
 .navbar-light .navbar-nav .nav-link {
-  color: #1e2022;
+  color: #1e2025;
 }
 
 .navbar .container-fluid {
