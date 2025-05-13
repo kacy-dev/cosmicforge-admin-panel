@@ -25,6 +25,9 @@
   <link rel="preload" href="assets/css/theme.min.css" data-hs-appearance="default" as="style">
   <link rel="preload" href="assets/css/theme-dark.min.css" data-hs-appearance="dark" as="style">
 
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
   <style data-hs-appearance-onload-styles>
     *
     {
@@ -131,6 +134,22 @@
   return (usePound ? "#" : "") + (g | (b << 8) | (r << 16)).toString(16)
 }
             </script>
+
+            <!-- At the top of your dashboard.html -->
+            <script>
+              $(document).ready(function () {
+                const token = sessionStorage.getItem("adminToken");
+                console.log(token);
+                if (!token) {
+                  // Not authenticated, redirect to login
+                  window.location.href = "";
+                }
+            
+                // Optionally, verify token with backend if needed
+              });
+            </script>
+            
+
 </head>
 
 <body class="has-navbar-vertical-aside navbar-vertical-aside-show-xl   footer-offset">
@@ -5457,7 +5476,18 @@
   <!-- End Create a new user Modal -->
   <!-- ========== END SECONDARY CONTENTS ========== -->
 
+  <script>
+    const Toast = Swal.mixin({
+      toast: true,
+      position: 'top-end',
+      showConfirmButton: false,
+      timer: 3000,
+      timerProgressBar: true,
+    });
+  </script>
+
   <!-- JS Implementing Plugins -->
+  <script src="assets/js/protectAdmin.js"></script>
   <script src="assets/js/vendor.min.js"></script>
 
   <script src="assets/vendor/chartjs-plugin-datalabels/dist/chartjs-plugin-datalabels.min.js"></script>
